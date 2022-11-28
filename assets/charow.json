@@ -1,0 +1,26 @@
+{
+    "username": "Charow",
+    "fullName": "Rowin van Amsterdam",
+    "socials": [
+        {
+            "name": "Twitter",
+            "username": "CharowDEV",
+            "url": "https://twitter.com/CharowDEV"
+        },
+        {
+            "name": "GitHub",
+            "username": "CharowDEV",
+            "url": "https://github.com/CharowDEV"
+        },
+        {
+            "name": "LinkedIn",
+            "username": "CharowDEV",
+            "url": "https://linkedin.com/in/CharowDEV/"
+        },
+        {
+            "name": "Instagram",
+            "username": "CharowDEV",
+            "url": "https://instagram.com/CharowDEV"
+        }
+    ]
+}
