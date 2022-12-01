@@ -1,7 +1,21 @@
 import React from "react";
 import loadable from "@loadable/component";
 
-export const IconNames = ["bell", "clock", "facebook", "github", "instagram", "linkedin", "moon", "mail", "sun", "twitter", "whatsapp"] as const;
+export const IconNames = [
+    "bell",
+    "clock",
+    "close",
+    "facebook",
+    "github",
+    "hamburger",
+    "instagram",
+    "linkedin",
+    "moon",
+    "mail",
+    "sun",
+    "twitter",
+    "whatsapp",
+] as const;
 
 interface IconProps {
     name: typeof IconNames[number];
@@ -9,7 +23,7 @@ interface IconProps {
 }
 
 export const Icon: React.FC<IconProps> = React.memo(({ name, className }) => {
-    const iconClass = `icon icon--${name} ${className ? className : ""} w-4 h-4`;
+    const iconClass = `icon icon--${name} ${className ? className : ""}`;
 
     if (!name || !IconNames.includes(name)) {
         return null;
