@@ -13,3 +13,11 @@ export default {
 } as ComponentMeta<typeof Header>;
 
 export const Primary = () => <Header />;
+
+Primary.parameters = {
+  nextRouter: {
+    path: "/",
+    asPath: "/",
+    query: {},
+  },
+};

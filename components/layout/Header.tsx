@@ -47,7 +47,12 @@ const HeaderSocials = () => (
     <ul className="flex lg:flex-1 justify-end gap-5 lg:gap-1 mt-auto mb-16 mx-auto lg:m-0">
         {charow.socials.map((social) => (
             <li key={social.name}>
-                <a href={social.url} target="_blank" rel="noopener noreferrer" className="block p-3 rounded-md hover:bg-white hover:shadow-[0_2px_10px_-3px_rgb(0,0,0,0.2)]">
+                <a
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-3 rounded-md hover:bg-white hover:shadow-[0_2px_10px_-3px_rgb(0,0,0,0.2)]"
+                >
                     <Icon name={social.name.toLowerCase() as typeof IconNames[number]} />
                 </a>
             </li>
@@ -65,7 +70,6 @@ export const Header = () => {
                 {({ open }) => (
                     <>
                         <Link href="/" className="flex flex-1 items-center">
-                            {/* <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Charow Logo" /> */}
                             <div className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Charow</div>
                         </Link>
 
@@ -83,9 +87,7 @@ export const Header = () => {
                                     leaveFrom="opacity-100 translate-y-0"
                                     leaveTo="opacity-0 translate-y-0"
                                 >
-                                    <Popover.Panel
-                                        className={`absolute flex flex-col z-10 w-full h-[calc(100vh-56px)] top-14 left-0 right-0 bg-white`}
-                                    >
+                                    <Popover.Panel className={`absolute flex flex-col z-10 w-full h-[calc(100vh-56px)] top-14 left-0 right-0 bg-white`}>
                                         <HeaderNavigation />
                                         <HeaderSocials />
                                     </Popover.Panel>
