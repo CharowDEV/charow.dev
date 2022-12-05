@@ -1,0 +1,13 @@
+import { Meta, Typeset } from '@storybook/addon-docs/';
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "/tailwind.config.js";
+const twFullConfig = resolveConfig(tailwindConfig);
+
+<Meta title="Typography" />
+
+# Base Typography
+
+**Font:** Nunito Sans
+
+**Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
+

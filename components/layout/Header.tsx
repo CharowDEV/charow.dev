@@ -51,7 +51,7 @@ const HeaderSocials = () => (
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block p-3 rounded-md hover:bg-white hover:shadow-[0_2px_10px_-3px_rgb(0,0,0,0.2)]"
+                    className="block p-3 rounded-md hover:bg-white hover:shadow-soft"
                 >
                     <Icon name={social.name.toLowerCase() as typeof IconNames[number]} />
                 </a>
