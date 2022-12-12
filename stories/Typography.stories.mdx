@@ -2,12 +2,27 @@ import { Meta, Typeset } from '@storybook/addon-docs/';
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "/tailwind.config.js";
 const twFullConfig = resolveConfig(tailwindConfig);
+const fontFamilyHeadings = twFullConfig.theme.fontFamily.headings;
+const fontFamilyBase = twFullConfig.theme.fontFamily.base;
+const HeaderSampleText = 'Roar at challenge';
+const BodySampleText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+const size = twFullConfig.theme.fontSize['text-5xl'];
 
 <Meta title="Typography" />
 
-# Base Typography
+# Typography
 
-**Font:** Nunito Sans
+**Font:** Montserrat
 
 **Weights:** 400(regular), 700(bold), 800(extrabold), 900(black)
 
+<Typeset fontFamily={fontFamilyHeadings} fontSizes={[size]} fontWeight={["bold"]} sampleText={`H1 - ${HeaderSampleText}`}/>
+<Typeset fontFamily={fontFamilyHeadings} fontSizes={["25px"]} fontWeight={["bold"]} sampleText={`H2 - ${HeaderSampleText}`} />
+<Typeset fontFamily={fontFamilyHeadings} fontSizes={["22px"]} fontWeight={["normal"]} sampleText={`H3 - ${HeaderSampleText}`} />
+<Typeset fontFamily={fontFamilyHeadings} fontSizes={["20px"]} fontWeight={["normal"]} sampleText={`H4 - ${HeaderSampleText}`} />
+<Typeset fontFamily={fontFamilyHeadings} fontSizes={["18px"]} fontWeight={["lighter"]} sampleText={`H5 - ${HeaderSampleText}`} />
+<Typeset fontFamily={fontFamilyHeadings} fontSizes={["16px"]} fontWeight={["lighter"]} sampleText={`H6 - ${HeaderSampleText}`} />
+
+<Typeset fontFamily={fontFamilyBase} fontSizes={["22px"]} fontWeight={["normal"]} sampleText={`subtitle1 - ${BodySampleText}`} />
+<Typeset fontFamily={fontFamilyBase} fontSizes={["20px"]} fontWeight={["normal"]} sampleText={`body1 - ${BodySampleText}`} />
+<Typeset fontFamily={fontFamilyHeadings} fontSizes={["18px"]} fontWeight={["lighter"]} sampleText={`footnote - ${BodySampleText}`} />

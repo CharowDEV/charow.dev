@@ -1,0 +1,43 @@
+@layer base {
+    
+    .header {
+        /* Need to change base to headings font-fam */
+        @apply font-base font-black uppercase;
+    }
+
+    .h1 {
+        @apply header text-6xl;
+    }
+
+    .h2 {
+        @apply header text-5xl;
+    }
+
+    .h3 {
+        @apply header text-4xl;
+    }
+
+    .h4 {
+        @apply header text-3xl;
+    }
+
+    .h5 {
+        @apply header text-2xl;
+    }
+
+    .h6 {
+        @apply header text-xl;
+    }
+
+    .subtitle1 {
+        @apply header text-sm;
+    }
+
+    .body1 {
+        @apply text-base;
+    }
+
+    .footnote {
+        @apply text-xs;
+    }
+}

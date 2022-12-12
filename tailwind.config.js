@@ -23,8 +23,8 @@ module.exports = {
               xs: ["0.75rem", { lineHeight: "1rem" }],
             },
             fontFamily: {
-              montserat: ["Montserrat", "sans-serif"],
-              inter: ["Inter", "sans-serif"],
+              headings: ["Montserrat", "sans-serif"],
+              base: ["Inter", "sans-serif"],
             }
         },
     },

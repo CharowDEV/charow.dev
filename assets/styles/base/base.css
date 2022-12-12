@@ -1,4 +1,10 @@
-.icon {
+@layer base {
+    html {
+      @apply font-base;
+    }
+  }
+
+  .icon {
     display: block;
     width: 1em;
     height: 1em;
