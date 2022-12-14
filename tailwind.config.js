@@ -2,6 +2,10 @@
 module.exports = {
     content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
     theme: {
+        container: {
+            padding: "1rem",
+            center: true,
+        },
         extend: {
             colors: {
                 primary: {
@@ -15,17 +19,21 @@ module.exports = {
                 },
             },
 
+            backgroundImage: {
+                "gradient-radial": "radial-gradient(ellipse at bottom, var(--tw-gradient-stops))",
+            },
+
             boxShadow: {
                 soft: "0 2px 10px -3px rgba(0,0,0, 0.2)",
             },
 
             fontSize: {
-              xs: ["0.75rem", { lineHeight: "1rem" }],
+                xs: ["0.75rem", { lineHeight: "1rem" }],
             },
             fontFamily: {
-              headings: ["Montserrat", "sans-serif"],
-              base: ["Inter", "sans-serif"],
-            }
+                headings: ["Montserrat", "sans-serif"],
+                base: ["Inter", "sans-serif"],
+            },
         },
     },
     darkMode: "class",

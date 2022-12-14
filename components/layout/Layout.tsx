@@ -4,9 +4,9 @@ import { Header } from "./Header";
 
 export const Layout = ({children}: PropsWithChildren) => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen text-primary bg-slate-50 ">
             <Header />
-            <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">{children}</main>
+            <main className="flex w-full flex-1 flex-col">{children}</main>
             <Footer />
         </div>
     );
