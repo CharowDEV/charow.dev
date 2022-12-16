@@ -1,6 +1,12 @@
 {
     "username": "Charow",
-    "fullName": "Rowin van Amsterdam",
+    "name": "Rowin van Amsterdam",
+    "profilePicture": "/images/profilePictures/profile-picture.jpg",
+    "contact": {
+        "email": "rowinvanamsterdam@rva-services.nl",
+        "phone": ""
+    },
+    "tags": ["Software Engineer", "Web3 Developer", "Background in UX Design"],
     "socials": [
         {
             "name": "Twitter",

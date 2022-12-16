@@ -5,7 +5,7 @@ title: "Add syntax highlighting in React using markdown-to-jsx and react-syntax-
 description: "Make code snippets in markdown easy to read by applying syntax highlighting using the markdown-to-jsx and react-syntax-highlighter packages."
 author: "Charow"
 pfp: "/images/profile-picture.jpg"
-banner: "/media/add-syntax-highlighting-in-react-using-markdown-to-jsx-and-react-syntax-highlighter/banner.jpg"
+banner: "/articleMedia/add-syntax-highlighting-in-react-using-markdown-to-jsx-and-react-syntax-highlighter/banner.jpg"
 banner_alt: "Code snippet"
 banner_caption: ""
 banner_caption_link: ""

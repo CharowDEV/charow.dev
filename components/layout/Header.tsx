@@ -1,4 +1,5 @@
 import { Popover, Transition } from "@headlessui/react";
+import { MySocials } from "components/socials/MySocials";
 import { Icon, IconNames } from "components/utils/Icon/Icon";
 import { useSize } from "components/utils/useSize";
 import Link from "next/link";
@@ -43,23 +44,6 @@ const HeaderNavigation = () => (
     </ul>
 );
 
-const HeaderSocials = () => (
-    <ul className="flex lg:flex-1 justify-end gap-5 lg:gap-1 mt-auto mb-16 mx-auto lg:m-0">
-        {charow.socials.map((social) => (
-            <li key={social.name}>
-                <a
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block p-3 rounded-md hover:bg-white hover:shadow-soft"
-                >
-                    <Icon name={social.name.toLowerCase() as typeof IconNames[number]} />
-                </a>
-            </li>
-        ))}
-    </ul>
-);
-
 export const Header = () => {
     const size = useSize();
     const isMobile = size.width < 1024;
@@ -89,7 +73,7 @@ export const Header = () => {
                                 >
                                     <Popover.Panel className={`absolute flex flex-col z-10 w-full h-[calc(100vh-56px)] top-14 left-0 right-0 bg-white`}>
                                         <HeaderNavigation />
-                                        <HeaderSocials />
+                                        <MySocials className="gap-5 mt-auto mb-16 mx-auto lg:m-0"/>
                                     </Popover.Panel>
                                 </Transition>
                             </>
@@ -98,7 +82,7 @@ export const Header = () => {
                         {!isMobile && (
                             <>
                                 <HeaderNavigation />
-                                <HeaderSocials />
+                                <MySocials />
                             </>
                         )}
                     </>
