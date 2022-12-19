@@ -4,11 +4,11 @@ date: "2022-09-23"
 title: "A concept for reselling digital games using the blockchain"
 description: "Solve the problem of reselling digital games by using the blockchain."
 author: "Charow"
-pfp: "/images/profile-picture.jpg"
+authorImage: "/images/profilePictures/profile-picture.jpg"
 banner: "/articleMedia/site-suggested-gas-fee/banner.jpg"
-banner_alt: "Banner image"
-banner_caption: ""
-banner_caption_link: ""
+bannerAlt: "Banner image"
+bannerCaption: ""
+bannerCaptionLink: ""
 ---
 
 The question I often got asked is: "Can you name an example or a problem whether the blockchain is really usefull for?". While I can name a lot of examples, I ran into an issue recently that I think is a good example of how the blockchain can be used to solve an existing problem. 

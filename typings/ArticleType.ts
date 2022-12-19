@@ -3,10 +3,12 @@ type ArticleMetadataType = {
     date: Date;
     title: string;
     description: string;
-    published: boolean;
-    banner: string;
     author: string;
-    pfp: string;
+    authorImage: string;
+    banner: string;
+    bannerAlt: string;
+    bannerCaption?: string;
+    bannerCaptionLink?: string;
 };
 
 export type ArticleType = {

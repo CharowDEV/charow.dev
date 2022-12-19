@@ -27,12 +27,22 @@ export const ArticleCard = ({ content, metadata }: ArticleType) => {
             href={'/blog/' + metadata.slug}
             className="group flex h-full flex-grow flex-col rounded-lg bg-white shadow-softer duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-soft"
         >
-            <div className="relative w-full overflow-hidden rounded-t-lg pt-[56.25%]">
-                <Image src={metadata.banner} alt="Article thumbnail" layout="fill" />
+            <div className="relative pb-[56.25%]">
+                <Image
+                    src={metadata.banner}
+                    alt="Article thumbnail"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    className="w-full h-full rounded-t-lg object-cover absolute"
+                    priority
+                />
             </div>
 
             <section className="p-6">
-                <h2 className="h6 flex-grow normal-case duration-200 ease-in-out group-hover:text-secondary group-active:text-secondary-dark">{metadata.title}</h2>
+                <h2 className="h6 flex-grow normal-case duration-200 ease-in-out group-hover:text-secondary group-active:text-secondary-dark">
+                    {metadata.title}
+                </h2>
                 <time className="footnote text-slate-400">
                     {formattedDate} • {estimatedReadingTime} min read
                 </time>

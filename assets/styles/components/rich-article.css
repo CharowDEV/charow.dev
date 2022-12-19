@@ -1,0 +1,81 @@
+@layer base {
+    .rich-article {
+        @apply text-lg;
+    }
+
+    /* #region Typography */
+    .rich-article h1 {
+        @apply mt-16 mb-4;
+    }
+
+    .rich-article h2 {
+        @apply h3 normal-case mt-14 mb-4;
+    }
+
+    .rich-article h3 {
+        @apply h4 normal-case;
+    }
+
+    .rich-article h4 {
+        @apply h5 normal-case;
+    }
+
+    .rich-article h5 {
+        @apply h6;
+    }
+
+    .rich-article h3,
+    h4,
+    h5,
+    h6 {
+        @apply mt-14 mb-4;
+    }
+
+    .rich-article p {
+        @apply my-6;
+    }
+    /* #endregion Typography */
+
+    /* #region Images */
+    .rich-article img {
+        @apply w-full rounded-md;
+    }
+
+    .rich-article img figcaption {
+        @apply footnote ml-auto block text-right;
+    }
+    /* #endregion Images */
+
+    /* #region Blockquote */
+    .rich-article blockquote {
+        @apply body1 my-6 rounded-md bg-sky-100 py-4 px-5 text-primary-light;
+    }
+
+    .rich-article blockquote p {
+        @apply m-0;
+    }
+    /* #endregion Blockquote */
+
+    /* #region Link */
+    .rich-article a {
+        @apply link underline;
+    }
+    /* #endregion Link */
+
+    /* #region Lists */
+    .rich-article ul,
+    ol {
+        @apply my-6 ml-5;
+    }
+    /* #endregion Lists */
+
+    /* #region Code */
+    .rich-article pre {
+        @apply text-sm;
+    }
+
+    .rich-article code {
+        @apply rounded-sm bg-neutral-200 py-1 px-1.5 text-xs;
+    }
+    /* #endregion Code */
+}

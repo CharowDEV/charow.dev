@@ -2,11 +2,12 @@
     html {
       @apply font-base;
     }
-  }
 
-  .icon {
-    display: block;
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
-}
+    .link {
+      @apply text-secondary hover:text-secondary-dark active:brightness-90;
+    }
+
+    .icon {
+      @apply block w-4 h-4 fill-current;
+    }
+  }

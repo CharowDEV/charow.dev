@@ -7,10 +7,16 @@ export const AboutCard = (props: AboutTypes) => {
     const { profilePicture, username, contact, tags } = props;
 
     return (
-        <div className="top-10 z-10 mx-auto max-w-[300px] -mt-32 flex h-fit flex-col items-center justify-center rounded-lg p-2.5 text-center lg:sticky lg:-mt-20 lg:bg-white">
-            <div className="relative my-3 h-40 w-40 overflow-hidden rounded-full">
-                <Image src={profilePicture} alt="Profile picture" layout="fill" />
-            </div>
+        <div className="top-10 z-10 mx-auto -mt-32 flex h-fit max-w-[300px] flex-col items-center justify-center rounded-lg p-2.5 text-center lg:sticky lg:-mt-20 lg:bg-white">
+            <Image
+                src={profilePicture}
+                alt="Profile picture"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="my-3 h-40 w-40 rounded-full"
+                priority
+            />
 
             <h2 className="h6 mt-2 normal-case text-secondary">{username}</h2>
 

@@ -4,7 +4,6 @@ import { Icon, IconNames } from "components/utils/Icon/Icon";
 import { useSize } from "components/utils/useSize";
 import Link from "next/link";
 import { Fragment } from "react";
-import charow from "../../assets/charow.json";
 
 const navItems = [
     {
@@ -71,7 +70,7 @@ export const Header = () => {
                                     leaveFrom="opacity-100 translate-y-0"
                                     leaveTo="opacity-0 translate-y-0"
                                 >
-                                    <Popover.Panel className={`absolute flex flex-col z-10 w-full h-[calc(100vh-56px)] top-14 left-0 right-0 bg-white`}>
+                                    <Popover.Panel className={`absolute flex flex-col z-50 w-full h-[calc(100vh-56px)] top-14 left-0 right-0 bg-white`}>
                                         <HeaderNavigation />
                                         <MySocials className="gap-5 mt-auto mb-16 mx-auto lg:m-0"/>
                                     </Popover.Panel>
