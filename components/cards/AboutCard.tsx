@@ -22,7 +22,7 @@ export const AboutCard = (props: AboutTypes) => {
 
             <ul className="footnote mt-2 flex flex-wrap justify-center gap-1">
                 {tags.map((tag) => (
-                    <li key={tag} className="rounded bg-slate-100 py-1 px-2 text-slate-500">
+                    <li key={tag} className="rounded bg-slate-100 py-1 px-2 text-slate-400">
                         {tag}
                     </li>
                 ))}
@@ -32,7 +32,7 @@ export const AboutCard = (props: AboutTypes) => {
                 Get in touch
             </IconButton>
 
-            <MySocials className="mt-4" />
+            <MySocials className="mt-4 text-slate-400" />
         </div>
     );
 };

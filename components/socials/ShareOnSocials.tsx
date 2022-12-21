@@ -26,7 +26,7 @@ const getShareUrl = (platform: SupportedPlatforms, url: ShareOnSocialsType['url'
 
 export const ShareOnSocials = (props: ShareOnSocialsType) => {
     return (
-        <div className="mt-0 flex h-fit w-fit flex-wrap items-center justify-end gap-6 justify-self-end md:sticky md:top-5 md:mt-12 md:flex-col">
+        <div className="mt-2 flex h-fit w-fit flex-wrap items-center justify-end gap-6 justify-self-end md:sticky md:top-16 md:mt-12 md:flex-col">
             <h2 className="h2 text-xs uppercase text-gray-300">Share</h2>
 
             <ul className="flex flex-row gap-1 md:flex-col">

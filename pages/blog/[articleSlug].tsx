@@ -21,36 +21,34 @@ const ArticlePage = ({ metadata, content }: ArticleType) => {
                 <title>{title}</title>
             </Head>
 
-            <main>
-                <Image
-                    src={metadata.banner}
-                    alt="Article thumbnail"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="h-56 lg:h-96 w-full object-cover"
-                    priority
+            <Image
+                src={metadata.banner}
+                alt="Article thumbnail"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="h-56 w-full object-cover lg:h-96"
+                priority
+            />
+
+            <section className="container mb-12 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-[1fr_minmax(0,_700px)_1fr]">
+                <ShareOnSocials
+                    url={`https://charow.dev/blog/${metadata.slug}`}
+                    text={metadata.title}
+                    platforms={['twitter', 'facebook', 'linkedin', 'whatsapp']}
                 />
 
-                <section className="container mb-12 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-[1fr_minmax(0,_700px)_1fr]">
-                    <ShareOnSocials
-                        url={`https://charow.dev/blog/${metadata.slug}`}
-                        text={metadata.title}
-                        platforms={['twitter', 'facebook', 'linkedin', 'whatsapp']}
+                <div className="self-center border-b pb-3">
+                    <h1 className="h2 text-center normal-case">{metadata.title}</h1>
+                    <ArticleMetadata
+                        author={metadata.author}
+                        authorImage={metadata.authorImage}
+                        date={formattedDate}
+                        readingTimeInMinutes={estimatedReadingTime}
                     />
-
-                    <div className="self-center border-b pb-3">
-                        <h1 className="h2 text-center normal-case">{metadata.title}</h1>
-                        <ArticleMetadata
-                            author={metadata.author}
-                            authorImage={metadata.authorImage}
-                            date={formattedDate}
-                            readingTimeInMinutes={estimatedReadingTime}
-                        />
-                        <Markdown value={content} wrapper="article" openExternalLinksInNewTab />
-                    </div>
-                </section>
-            </main>
+                    <Markdown value={content} wrapper="article" openExternalLinksInNewTab />
+                </div>
+            </section>
         </>
     );
 };

@@ -64,7 +64,7 @@
 
     /* #region Lists */
     .rich-article ul,
-    ol {
+    .rich-article ol {
         @apply my-6 ml-5;
     }
     /* #endregion Lists */

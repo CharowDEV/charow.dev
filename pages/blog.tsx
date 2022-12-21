@@ -15,14 +15,12 @@ const Home: NextPage = ({ blogaArticlesSortedByDate }: any) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
-                <HeroBanner />
+            <HeroBanner />
 
-                <div className="container flex max-w-screen-2xl flex-col gap-10 lg:flex-row">
-                    <AboutCard {...AboutInfo} />
-                    <ArticleCards articles={blogaArticlesSortedByDate} />
-                </div>
-            </main>
+            <div className="container flex max-w-screen-2xl flex-col gap-10 lg:flex-row">
+                <AboutCard {...AboutInfo} />
+                <ArticleCards articles={blogaArticlesSortedByDate} />
+            </div>
         </>
     );
 };
