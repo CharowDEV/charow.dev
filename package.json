@@ -6,7 +6,7 @@
     "start": "next start",
     "start:storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "preinstall": "npm run initDraftsFolder",
+    "preinstall": "npm run initializeDraftsFolder",
     "initializeDraftsFolder": "npx ts-node ./scripts/initializeDraftsFolder.ts"
     
   },
