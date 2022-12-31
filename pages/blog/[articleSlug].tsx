@@ -9,17 +9,26 @@ import { formatDate } from 'components/helpers/formatDate';
 import { estimateReadingTime } from 'components/helpers/estimateReadingTime';
 import { ArticleType } from 'typings/ArticleType';
 import { ShareOnSocials } from 'components/socials/ShareOnSocials';
+import { TwitterComments } from 'components/TwitterComments/TwitterComments';
+import { useEffect, useState } from 'react';
+import { loadExternalScript } from 'components/utils/scripts/loadExternalScripts';
+import { useExternalScript } from 'components/hooks/useExternalScript';
 
 const ArticlePage = ({ metadata, content }: ArticleType) => {
     const title = `${metadata.title} • Charow`;
     const formattedDate = formatDate(metadata.date);
     const estimatedReadingTime = estimateReadingTime(content);
+    // const [isLoaded, setIsLoaded] = useState(false);
+    const { error, isLoaded: scriptIsLoaded } = useExternalScript('https://platform.twitter.com/widgets.js');
+
+    console.log('article slug isLoaded', scriptIsLoaded)
 
     return (
         <>
             <Head>
                 <title>{title}</title>
             </Head>
+
 
             <Image
                 src={metadata.banner}
@@ -38,7 +47,7 @@ const ArticlePage = ({ metadata, content }: ArticleType) => {
                     platforms={['twitter', 'facebook', 'linkedin', 'whatsapp']}
                 />
 
-                <div className="self-center border-b pb-3">
+                <div className="self-center pb-3">
                     <h1 className="h2 text-center normal-case">{metadata.title}</h1>
                     <ArticleMetadata
                         author={metadata.author}
@@ -47,6 +56,11 @@ const ArticlePage = ({ metadata, content }: ArticleType) => {
                         readingTimeInMinutes={estimatedReadingTime}
                     />
                     <Markdown value={content} wrapper="article" openExternalLinksInNewTab />
+                    <div>is ready: {scriptIsLoaded}</div>
+                    {scriptIsLoaded && <TwitterComments />}
+
+                    always:
+                    <TwitterComments />
                 </div>
             </section>
         </>
