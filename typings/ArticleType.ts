@@ -9,6 +9,7 @@ type ArticleMetadataType = {
     bannerAlt: string;
     bannerCaption?: string;
     bannerCaptionLink?: string;
+    discussOnTwitterId?: string;
 };
 
 export type ArticleType = {
