@@ -1,4 +1,4 @@
-type ArticleMetadataType = {
+export type ArticleMetadataType = {
     slug: string;
     date: Date;
     title: string;
