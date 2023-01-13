@@ -9,6 +9,7 @@ banner: "/articleMedia/add-syntax-highlighting-in-react-using-markdown-to-jsx-an
 bannerAlt: "Code snippet"
 bannerCaption: ""
 bannerCaptionLink: ""
+discussOnTwitterId: "1606010881594236928"
 ---
 
 In markdown, you can add code snippets by using the backtick character. This is a great way to add code snippets to your blog posts for example. However, it is not very easy to read. This is where syntax highlighting comes into play. You could do this easily by using the markdown-to-jsx and react-syntax-highlighter packages. 

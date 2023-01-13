@@ -9,7 +9,7 @@ type ShareOnSocialsType = {
     platforms: SupportedPlatforms[];
 };
 
-const getShareUrl = (platform: SupportedPlatforms, url: ShareOnSocialsType['url'], text: ShareOnSocialsType['text']) => {
+export const getShareUrl = (platform: SupportedPlatforms, url: ShareOnSocialsType['url'], text: ShareOnSocialsType['text']) => {
     const twitterUsername = charow.socials.find((social) => social.name.toLowerCase() === 'twitter')?.username;
 
     switch (platform) {

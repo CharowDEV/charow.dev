@@ -1,4 +1,4 @@
-type ArticleMetadataType = {
+export type ArticleMetadataType = {
     slug: string;
     date: Date;
     title: string;
@@ -9,6 +9,7 @@ type ArticleMetadataType = {
     bannerAlt: string;
     bannerCaption?: string;
     bannerCaptionLink?: string;
+    discussOnTwitterId?: string;
 };
 
 export type ArticleType = {

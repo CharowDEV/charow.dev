@@ -1,0 +1,9 @@
+@layer base {
+    .icon {
+        @apply block h-4 w-4 fill-current;
+    }
+
+    .info-icon {
+        @apply relative inline-block shrink-0 h-3 w-3 cursor-pointer rounded-full bg-slate-400 align-middle text-white after:absolute after:left-2/4 after:top-2/4 after:-translate-x-2/4 after:-translate-y-2/4 after:text-xs after:content-['i'];
+    }
+}

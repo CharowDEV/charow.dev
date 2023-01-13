@@ -1,6 +1,6 @@
-import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/";
-import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "/tailwind.config.js";
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/';
+import resolveConfig from 'tailwindcss/resolveConfig';
+import tailwindConfig from '/tailwind.config.js';
 const twFullConfig = resolveConfig(tailwindConfig);
 
 <Meta title="Colors" />
@@ -10,32 +10,40 @@ const twFullConfig = resolveConfig(tailwindConfig);
 <ColorPalette>
     <ColorItem title="theme.color.primary" subtitle="Blue Cerulean" colors={twFullConfig.theme.colors['primary']} />
     <ColorItem title="theme.color.secondary" subtitle="Blue Port Gore" colors={twFullConfig.theme.colors['secondary']} />
+</ColorPalette>
 
+# Status Colors
+
+<ColorPalette>
+    <ColorItem title="theme.color.error" subtitle="Pomegranate" colors={twFullConfig.theme.colors['error']} />
+    <ColorItem title="theme.color.warning" subtitle="Sunshade" colors={twFullConfig.theme.colors['warning']} />
+    <ColorItem title="theme.color.info" subtitle="Dodger Blue" colors={twFullConfig.theme.colors['info']} />
+    <ColorItem title="theme.color.success" subtitle="Fern" colors={twFullConfig.theme.colors['success']} />
 </ColorPalette>
 
 # Tailwind Default Colors
 
 <ColorPalette>
-    <ColorItem title="theme.color.slate" subtitle="Slate" colors={twFullConfig.theme.colors["slate"]} />
-    <ColorItem title="theme.color.gray" subtitle="Gray" colors={twFullConfig.theme.colors["gray"]} />
-    <ColorItem title="theme.color.zinc" subtitle="Zinc" colors={twFullConfig.theme.colors["zinc"]} />
-    <ColorItem title="theme.color.neutral" subtitle="Neutral" colors={twFullConfig.theme.colors["neutral"]} />
-    <ColorItem title="theme.color.stone" subtitle="Stone" colors={twFullConfig.theme.colors["stone"]} />
-    <ColorItem title="theme.color.red" subtitle="Red" colors={twFullConfig.theme.colors["red"]} />
-    <ColorItem title="theme.color.orange" subtitle="Orange" colors={twFullConfig.theme.colors["orange"]} />
-    <ColorItem title="theme.color.amber" subtitle="Amber" colors={twFullConfig.theme.colors["amber"]} />
-    <ColorItem title="theme.color.yellow" subtitle="Yellow" colors={twFullConfig.theme.colors["yellow"]} />
-    <ColorItem title="theme.color.lime" subtitle="Lime" colors={twFullConfig.theme.colors["lime"]} />
-    <ColorItem title="theme.color.green" subtitle="Green" colors={twFullConfig.theme.colors["green"]} />
-    <ColorItem title="theme.color.emerald" subtitle="Emerald" colors={twFullConfig.theme.colors["emerald"]} />
-    <ColorItem title="theme.color.teal" subtitle="Teal" colors={twFullConfig.theme.colors["teal"]} />
-    <ColorItem title="theme.color.cyan" subtitle="Cyan" colors={twFullConfig.theme.colors["cyan"]} />
-    <ColorItem title="theme.color.sky" subtitle="Sky" colors={twFullConfig.theme.colors["sky"]} />
-    <ColorItem title="theme.color.blue" subtitle="Blue" colors={twFullConfig.theme.colors["blue"]} />
-    <ColorItem title="theme.color.indigo" subtitle="Indigo" colors={twFullConfig.theme.colors["indigo"]} />
-    <ColorItem title="theme.color.violet" subtitle="Violet" colors={twFullConfig.theme.colors["violet"]} />
-    <ColorItem title="theme.color.purple" subtitle="Purple" colors={twFullConfig.theme.colors["purple"]} />
-    <ColorItem title="theme.color.fuchsia" subtitle="Fuchsia" colors={twFullConfig.theme.colors["fuchsia"]} />
-    <ColorItem title="theme.color.pink" subtitle="Pink" colors={twFullConfig.theme.colors["pink"]} />
-    <ColorItem title="theme.color.rose" subtitle="Rose" colors={twFullConfig.theme.colors["rose"]} />
+    <ColorItem title="theme.color.slate" subtitle="Slate" colors={twFullConfig.theme.colors['slate']} />
+    <ColorItem title="theme.color.gray" subtitle="Gray" colors={twFullConfig.theme.colors['gray']} />
+    <ColorItem title="theme.color.zinc" subtitle="Zinc" colors={twFullConfig.theme.colors['zinc']} />
+    <ColorItem title="theme.color.neutral" subtitle="Neutral" colors={twFullConfig.theme.colors['neutral']} />
+    <ColorItem title="theme.color.stone" subtitle="Stone" colors={twFullConfig.theme.colors['stone']} />
+    <ColorItem title="theme.color.red" subtitle="Red" colors={twFullConfig.theme.colors['red']} />
+    <ColorItem title="theme.color.orange" subtitle="Orange" colors={twFullConfig.theme.colors['orange']} />
+    <ColorItem title="theme.color.amber" subtitle="Amber" colors={twFullConfig.theme.colors['amber']} />
+    <ColorItem title="theme.color.yellow" subtitle="Yellow" colors={twFullConfig.theme.colors['yellow']} />
+    <ColorItem title="theme.color.lime" subtitle="Lime" colors={twFullConfig.theme.colors['lime']} />
+    <ColorItem title="theme.color.green" subtitle="Green" colors={twFullConfig.theme.colors['green']} />
+    <ColorItem title="theme.color.emerald" subtitle="Emerald" colors={twFullConfig.theme.colors['emerald']} />
+    <ColorItem title="theme.color.teal" subtitle="Teal" colors={twFullConfig.theme.colors['teal']} />
+    <ColorItem title="theme.color.cyan" subtitle="Cyan" colors={twFullConfig.theme.colors['cyan']} />
+    <ColorItem title="theme.color.sky" subtitle="Sky" colors={twFullConfig.theme.colors['sky']} />
+    <ColorItem title="theme.color.blue" subtitle="Blue" colors={twFullConfig.theme.colors['blue']} />
+    <ColorItem title="theme.color.indigo" subtitle="Indigo" colors={twFullConfig.theme.colors['indigo']} />
+    <ColorItem title="theme.color.violet" subtitle="Violet" colors={twFullConfig.theme.colors['violet']} />
+    <ColorItem title="theme.color.purple" subtitle="Purple" colors={twFullConfig.theme.colors['purple']} />
+    <ColorItem title="theme.color.fuchsia" subtitle="Fuchsia" colors={twFullConfig.theme.colors['fuchsia']} />
+    <ColorItem title="theme.color.pink" subtitle="Pink" colors={twFullConfig.theme.colors['pink']} />
+    <ColorItem title="theme.color.rose" subtitle="Rose" colors={twFullConfig.theme.colors['rose']} />
 </ColorPalette>
