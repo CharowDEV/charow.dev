@@ -9,6 +9,7 @@ banner: "/articleMedia/site-suggested-gas-fee/banner.jpg"
 bannerAlt: "Metamask showing a site suggested gas fee"
 bannerCaption: ""
 bannerCaptionLink: ""
+discussOnTwitterId: "1613938931531403264"
 ---
 
 In the process of connecting a smart contract to a webapplication using the web3.js library I found out that MetaMask will use a gas fee that is suggested by your website. Even if you didn't define it yourself, because the web3.js library creates it's own values (version 1.7.4). By default the values are so low that the transaction will most likely fail. 
