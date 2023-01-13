@@ -14,12 +14,4 @@
     .btn {
         @apply cursor-pointer rounded-md fill-current py-2 px-4 text-center text-sm uppercase text-white duration-150 hover:ease-in-out;
     }
-    
-    .tooltip {
-        @apply rounded;
-    }
-
-    .rc-tooltip .rc-tooltip-inner {
-        @apply bg-black text-white border-none max-w-[200px] text-center min-w-0;
-    }
 }
