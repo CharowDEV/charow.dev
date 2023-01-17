@@ -9,7 +9,7 @@ banner: '/articleMedia/load-scripts-per-page-while-using-next-link-for-navigatio
 bannerAlt: 'Silver and black round analog watch'
 bannerCaption: ''
 bannerCaptionLink: ''
-discussOnTwitterId: ''
+discussOnTwitterId: '1615434688352378884'
 ---
 
 A common [issue](https://github.com/vercel/next.js/discussions/17919) in NextJS projects is that the `Script` component does not work on page changes when the project uses the built-in `Link` component for navigation. It only works on initial load and reload. One way to solve this problem is to replace the `Link` component with a regular `anchor` element, but this can result in drawbacks such as slower loading times. To overcome this I built a custom hook that allows for loading external scripts on specific pages and/or after page changes.
