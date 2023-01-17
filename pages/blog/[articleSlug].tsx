@@ -22,15 +22,15 @@ const ArticlePage = ({ metadata, content }: ArticleType) => {
     const title = `${metadata.title} • Charow`;
     const formattedDate = formatDate(metadata.date);
     const estimatedReadingTime = estimateReadingTime(content);
-    const { error, isLoaded: scriptIsLoaded } = useExternalScript('https://platform.twitter.com/widgets.js');
-    const shouldShowEmbeddedTweet = metadata.discussOnTwitterId && scriptIsLoaded;
+    const { error, isLoaded } = useExternalScript('https://platform.twitter.com/widgets.js');
+    const shouldShowEmbeddedTweet = metadata.discussOnTwitterId && isLoaded;
 
     useEffect(() => {
         const discussOnTwitterContainer = document.getElementById('discuss-on-twitter-container');
         if (window.twttr !== undefined) {
             window.twttr.widgets.load(discussOnTwitterContainer);
         }
-    }, [scriptIsLoaded]);
+    }, [isLoaded]);
 
     return (
         <>

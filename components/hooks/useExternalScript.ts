@@ -9,6 +9,7 @@ export const useExternalScript = (url: string) => {
         script.src = url;
         script.async = true;
         document.head.appendChild(script);
+        
         script.onload = () => setIsLoaded(true);
         script.onerror = () => setError(true);
 
