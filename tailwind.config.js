@@ -65,7 +65,7 @@ module.exports = {
                 return Object.keys(spacing).reduce((accumulator, spacingKey) => {
                     return {
                         ...accumulator,
-                        [`fill-${spacingKey}`]: `repeat(auto-fill, minmax(${spacing[spacingKey]}, 1fr))`
+                        [`fit-${spacingKey}`]: `repeat(auto-fit, minmax(${spacing[spacingKey]}, 1fr))`
                     };
                 }, {});
             }
